@@ -1,0 +1,103 @@
+/* Header Styles */
+.page-header {
+  background: #f2f1ec;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #2c5568;
+  margin: 0;
+  cursor: pointer;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.nav-item {
+  padding: 13px 16px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  font-family:
+    "Poppins",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2b2b2b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-item.active {
+  background: #36506d;
+  color: #f2f1ec;
+  border-radius: 30px;
+  padding: 13px 16px;
+}
+
+.nav-item:hover:not(.active) {
+  background: rgba(54, 80, 109, 0.1);
+}
+
+.sign-out-btn {
+  background: #e53e3e !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
+
+.sign-out-btn:hover {
+  background: #c53030 !important;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile svg {
+  width: 37px;
+  height: 36px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .main-navigation {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-item {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}

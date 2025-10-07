@@ -1,0 +1,124 @@
+/* Dropdown Styles */
+.dropdown-container {
+  position: relative;
+  width: 407px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-header {
+  display: flex;
+  padding: 16px 26px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  border: 2px solid #b8bbc2;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 63px;
+  box-sizing: border-box;
+}
+
+.dropdown-header:hover {
+  border-color: #36506d;
+}
+
+.dropdown-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.dropdown-placeholder {
+  color: #313144;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  opacity: 0.4;
+}
+
+.dropdown-selected {
+  color: #313144;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  opacity: 1;
+}
+
+.dropdown-chevron {
+  width: 29px;
+  height: 29px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-chevron-open {
+  transform: rotate(180deg);
+}
+
+.dropdown-items {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  background: #f9f9f9;
+  border-radius: 0 0 12px 12px;
+  border: 2px solid #b8bbc2;
+  border-top: none;
+  max-height: 318px;
+  overflow-y: auto;
+  z-index: 1001;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  display: flex;
+  padding: 16px 35px;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #313144;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+
+.dropdown-item:hover {
+  background: #e8e8e8;
+}
+
+.dropdown-item:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .dropdown-container {
+    width: 100%;
+    max-width: 407px;
+  }
+}

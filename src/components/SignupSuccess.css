@@ -1,0 +1,210 @@
+/* Signup Success Page Styles */
+.signup-success-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #9aacb5;
+  padding: 40px 48px 45px 44px;
+  box-sizing: border-box;
+}
+
+.signup-success-card {
+  width: 1348px;
+  height: 797px;
+  background: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.success-icon-container {
+  position: relative;
+  width: 129px;
+  height: 129px;
+  margin-bottom: 44px;
+}
+
+.success-circle {
+  width: 129px;
+  height: 129px;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 3.618px 3.618px rgba(0, 0, 0, 0.25));
+}
+
+.success-checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 41px;
+  height: 27px;
+  flex-shrink: 0;
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 555px;
+  margin-bottom: 59px;
+  text-align: center;
+}
+
+.success-title {
+  color: #26203b;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.success-subtitle {
+  color: #9c9aa5;
+  text-align: center;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.back-to-login-btn {
+  display: flex;
+  width: 210px;
+  height: 48px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #36506d;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: background-color 0.2s ease;
+}
+
+.back-to-login-btn:hover {
+  background: #2a3f57;
+}
+
+.back-to-login-btn:active {
+  background: #1f2f3f;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .signup-success-page {
+    padding: 20px;
+  }
+
+  .signup-success-card {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    min-height: 600px;
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-success-page {
+    padding: 15px;
+  }
+
+  .signup-success-card {
+    padding: 40px 20px;
+    min-height: 500px;
+  }
+
+  .success-message {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .success-title {
+    font-size: 28px;
+  }
+
+  .success-subtitle {
+    font-size: 16px;
+  }
+
+  .success-icon-container {
+    margin-bottom: 30px;
+  }
+
+  .back-to-login-btn {
+    width: 180px;
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-success-card {
+    padding: 30px 15px;
+  }
+
+  .success-title {
+    font-size: 24px;
+  }
+
+  .success-subtitle {
+    font-size: 14px;
+  }
+
+  .success-icon-container {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+  }
+
+  .success-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .success-checkmark {
+    top: 40px;
+    left: 34px;
+    width: 32px;
+    height: 21px;
+  }
+
+  .back-to-login-btn {
+    width: 160px;
+    height: 40px;
+    font-size: 13px;
+  }
+}

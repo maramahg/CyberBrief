@@ -1,0 +1,391 @@
+/* SignUp Employee Styles */
+.signup-employee-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-employee-background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(54, 80, 109, 0.3) 41%,
+    rgba(242, 241, 236, 0.3) 62.02%,
+    rgba(54, 80, 109, 0.3) 99.99%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 47px 44px;
+  box-sizing: border-box;
+}
+
+.signup-employee-form-container {
+  width: 100%;
+  max-width: 1349px;
+  height: 100%;
+  max-height: 798px;
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40px 44px 47px;
+}
+
+.signup-employee-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  background: none;
+  border: none;
+  width: 21px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #333;
+}
+
+.signup-employee-title {
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  text-align: center;
+  line-height: normal;
+}
+
+.signup-employee-subtitle {
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8692a6;
+  margin: 0 0 20px 0;
+  text-align: center;
+  line-height: 28px;
+}
+
+.signup-employee-form {
+  width: 100%;
+  max-width: 418px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-label {
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #696f79;
+  margin: 0;
+  line-height: normal;
+}
+
+.form-input {
+  width: 100%;
+  height: 51px;
+  padding: 0 16px;
+  border: 0.919px solid #8692a6;
+  border-radius: 5.511px;
+  background: #fff;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #8692a6;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #36506d;
+  box-shadow: 0px 3.674px 9.185px 2.756px rgba(0, 0, 0, 0.11);
+}
+
+.form-input::placeholder {
+  color: #8692a6;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input {
+  padding-right: 60px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.password-toggle:hover {
+  color: #36506d;
+}
+
+.password-constraints {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.constraint-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.constraint-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.constraint-icon.valid path {
+  stroke: #465ff1;
+  stroke-opacity: 1;
+}
+
+.constraint-text {
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #26203b;
+  line-height: 100%;
+  flex: 1;
+}
+
+.terms-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #696f79;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 0.919px solid #616161;
+  border-radius: 5.511px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+  background: #36506d;
+  border-color: #36506d;
+}
+
+.checkbox-input:checked + .checkbox-custom::after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -2px;
+}
+
+.checkbox-text {
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #696f79;
+  line-height: normal;
+}
+
+.register-button {
+  width: 100%;
+  height: 59px;
+  background: #36506d;
+  border: none;
+  border-radius: 28px;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  margin-top: -8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-button:hover {
+  background: #2a3f56;
+  transform: translateY(-1px);
+}
+
+.register-button:active {
+  transform: translateY(0);
+}
+
+.register-button:disabled {
+  background: #8692a6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .signup-employee-background {
+    padding: 20px;
+  }
+
+  .signup-employee-form-container {
+    padding: 40px 24px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .signup-employee-title {
+    font-size: 24px;
+  }
+
+  .signup-employee-subtitle {
+    font-size: 16px;
+  }
+
+  .signup-employee-form {
+    max-width: 100%;
+  }
+
+  .back-button {
+    right: 10px;
+    top: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-employee-form-container {
+    padding: 30px 20px;
+  }
+
+  .signup-employee-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .signup-employee-subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .form-input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .register-button {
+    height: 50px;
+  }
+}
