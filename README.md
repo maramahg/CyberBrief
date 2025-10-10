@@ -49,7 +49,7 @@ Log in using either credentials or digital certificates issued by the system
 ## For Admin
 ### Login Credentials:
 
-Username: admin=
+Username: admin
 Password: admin123
 
 ## Admins can:
