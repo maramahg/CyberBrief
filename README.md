@@ -15,18 +15,24 @@ By combining encryption, user access control, and automated authorization, Cyber
 
 ## To start using CyberBrief, follow these steps:
 
-### 1. Install Node.js and a code editor (e.g., VS Code)
-### 2. Install the required packages
-npm install
+    1. Install Node.js and a code editor (e.g., VS Code)
+    
+    2. Install the required packages
+    npm install
 
-### 3. Start the backend server
-node server.js
+    3. Start the backend server
+    node server.js
 
-### 4. Start the frontend application
-npm start
+    4. Start the frontend application
+    npm start
+    
+    5. Start the backend server
+    node server.js
+    
+    6. Start the frontend application
+    npm start
 
-
-CyberBrief will run locally. Access it through your browser and enjoy secure report sharing!
+    CyberBrief will run locally. Access it through your browser and enjoy secure report sharing!
 
 # How to Use CyberBrief
 
